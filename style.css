@@ -14,11 +14,9 @@ footer {
 
 h1, p {
   text-align: center;
+  width: 50%;
 }
 
-h1{
-	width: 50%;	
-}
 
 /* to style phone number link */
 a[href^="tel:"]{

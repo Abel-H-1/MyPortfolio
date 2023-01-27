@@ -14,7 +14,11 @@ footer {
 
 h1, p {
   text-align: center;
-  font-size: 14px;
+}
+
+h1 {
+  font-size: 60%; 
+  line-height:60%;
 }
 
 

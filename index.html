@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-	<title>Simple HTML Web Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Abel's Portfolio </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,39 +13,99 @@
    />
 </head>
 
+
 <body>
  
 	<header>
-		<img src="images/mountain-hiker.jpg" width="500" />
-    <nav>Navigation Container: Home | About | Contact</nav>
+
+	  <div class="flex-box">
+      <h1>Abel's Portfolio</h1>
+      <nav class = "flex-box">
+        <a class = "item"href="#about">About</a>
+        <a class = "item"href="#Certificates">Certifications</a>
+        <a class = "item"href="#contact">Contact</a>
+      </nav>
+    </div>
+
   </header>
 
-
-
-
   <main>
-    <h1>This is a simple heading created within HTML.</h1>
-    <p>This is a simple paragraph created within HTML.</p>
-	  
-	  <h2>  Test  1 122 </h2>
+
+
+    <div>
+       <!-- About section -->
+      <article id="about">
+        <h2>About</h2>
+        <section class="flex-box">
+
+          <div class="item-2">
+            <img
+              class="image-circle"
+              src="images/mountain-hiker.jpg"
+              alt="Pete Thinkful"
+            />
+          </div>
+
+          <div class="item-2">
+
+            <h3>Hi! I'm Abel Eugene Hernandez</h3>
+
+            <p>I'm an Software Engineer living in Fort Worth, Texas.</p>
+            <p> insert here. insert here.</p> 
+           
+            <p>Insert Here</p>
+
+            <p>
+               Please feel free to take a look my projects linked below and feel free to
+              <a href="#contact">contact</a> me about any job opportunities.
+            </p>
+         </div>
+
+        </section>
+
+        <section>
+            <h3>Abel's Background</h3>
+            <p>
+              Insert Here
+            </p>
+            <p>
+              Insert Here
+            </p>
+        </section>
+      </article>
+
+
+        <!-- Portfolio section -->
+        <article id="Certificates">
+          <h2>Certifications</h2>
+
+          <ul>
+           <li> Oracle Certified Associate, Java SE 8 Programmer Certificate: <a href="https://www.credly.com/badges/5a868ac5-ef0c-4cf9-aeb8-bd5aabfef133 ">Credly Badge</a> </li>
+           <br>
+           <li> CompTIA Security + ce Certificate: <a href="https://www.credly.com/badges/cdd6e297-949b-4d97-a5a3-1ac741409350">Credly Badge</a></li>
+          </ul>
+     
+        </article>
+
+
+    </div>
   </main>
 
 
-
-
   
+  <!-- Footer  -->
   <footer>
+
+    <section id="contact">
 		  <!-- This link will automatically open the user's default email program with the TO field already filled out with the proper email address.-->
-      <!-- BASIC EMAIL LINK HERE -->
-    <p><a href="mailto:abel_9441@yahoo.com">Email Me</a></p>
-
-
+      <p><a href="mailto:abel_9441@yahoo.com">Email Me</a></p>
       <!-- BASIC TELEPHONE LINK WITH STYLE -->
-      <p><a href="tel:555-555-5555">210-701-4612</a></p>
+      <p><a href="tel:">210-000-0000</a></p>
+      <p><a href="https://www.linkedin.com/in/abel-hernandez-278350160/">LinkedIn</a> </p>
+    </section>
+
   </footer>
 
-  <script src="script.js"></script>
-</body>
 
-
+  </body>
 </html>

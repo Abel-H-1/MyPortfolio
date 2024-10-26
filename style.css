@@ -73,6 +73,7 @@ a[href="tel:"]{
 
 a:hover {
   color: #f77f00;
+  transform: scale(1.05);
 }
 
 hr {

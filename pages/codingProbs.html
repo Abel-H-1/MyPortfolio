@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenges and Step by Step Solutions</title>
+    <style>
+        /* Basic styling */
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, Monaco, monospace;
+            color: #d63384;
+        }
+        /* Initially hide the extra code */
+        #extraCode {
+            display: none;
+        }
+        /* Class to show hidden code */
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to Reveal More Code</h1>
+    
+    <!-- First code snippet always visible -->
+    <pre><code>// Basic JavaScript Example
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("Abel"));</code></pre>
+
+    <!-- Button to reveal more code -->
+    <button id="revealBtn">Show More Code</button>
+
+    <!-- Extra code snippet initially hidden -->
+    <pre id="extraCode"><code>// More advanced example
+function addNumbers(a, b) {
+    return a + b;
+}
+console.log(addNumbers(5, 10));</code></pre>
+
+    <br><br>
+    <a href="../index.html">Home</a>
+
+    <script>
+        // JavaScript to handle the click event
+        document.getElementById("revealBtn").addEventListener("click", function() {
+            var extraCode = document.getElementById("extraCode");
+            if (extraCode.style.display === "none" || extraCode.style.display === "") {
+                extraCode.style.display = "block";
+                this.textContent = "Hide Code";  // Change button text to "Hide Code"
+            } else {
+                extraCode.style.display = "none";
+                this.textContent = "Show More Code";  // Change button text back to "Show More Code"
+            }
+        });
+    </script>
+</body>
+</html>

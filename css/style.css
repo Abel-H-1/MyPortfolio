@@ -1,0 +1,202 @@
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  margin: 10px;
+}
+
+.item-2 {
+  flex: 1;
+  text-align: justify;
+}
+
+.image-circle {
+  border: 2px solid #426a7f;
+  border-radius: 50%;
+  width: 300px; /* Adjust the size to make it bigger */
+  height: 300px; /* Make sure to match the height to keep it circular */
+}
+
+
+
+/* Dark Mode Styles changes to webpage styling */
+body.dark-mode {
+  background-image: none; /* This removes the background image */
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.dark-mode, footer.dark-mode {
+  background-color: #333333;
+}
+
+a.dark-mode {
+  color: #f77f00;
+}
+
+
+
+
+/*Styling for Button itself*/
+#theme-toggle {
+  position: fixed; /* Keeps the button visible while scrolling */
+  top: 20px;
+  right: 20px;
+  background-color: #003049;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #f77f00;
+  transform: scale(1.1);
+}
+
+body.dark-mode #theme-toggle {
+  background-color: #ffffff;
+  color: #003049;
+}
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../images/background-pic.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+div {
+  margin: auto;
+  width: 600px;
+}
+
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  background-color: #4da0b8; 
+  color: #000000;  /* Text color */
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
+}
+
+/* to style phone number link */
+a[href="tel:"]{
+  color: rgb(0, 255, 98);
+}
+
+/* To style email link */
+
+a:hover {
+  color: #f77f00;
+  transform: scale(1.05);
+}
+
+hr {
+  width: 420px;
+	height: 32px;
+	border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+	background-image: url("images/horizontal-rule.png");
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+footer {
+  margin: 200px 0 0 0;
+  padding: 20px 0;
+  text-align: center;
+}
